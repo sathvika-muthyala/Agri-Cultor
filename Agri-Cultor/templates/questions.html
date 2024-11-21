@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Farmacy</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+     <link rel="stylesheet" href="/static/css/magnific-popup.css">
+     <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="/static/css/templatemo-style.css">
+	     <!-- MAIN CSS -->
+<style>
+	input[type="number"] {
+  width: 100px;
+}
+
+input + span {
+  padding-right: 30px;
+}
+
+input:invalid+span:after {
+  position: absolute; content: '✖';
+  padding-left: 5px;
+  color: #8b0000;
+}
+
+input:valid+span:after {
+  position: absolute;
+  content: '✓';
+  padding-left: 5px;
+  color: #009000;
+}
+</style>
+</head>
+
+
+<body>
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation" style="background-color: blue;">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="/index.html" class="navbar-brand">Farmacy</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="/" class="smoothScroll">Home</a></li>
+                         <li><a href="#about" class="smoothScroll">About</a></li>
+                         <li><a href="#blog" class="smoothScroll">Blog</a></li>
+                         <li><a href="#work" class="smoothScroll">Our Work</a></li>
+                         <li><a href="#contact" class="smoothScroll">Contacts</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+ 
+ <section>
+    
+    	<h1 class="text-center">HEALTH DIET PREDICTOR</h1>
+
+
+		<form action="" method="POST" style="
+				margin: auto;
+				width: 80%;
+				border: 3px solid green;
+				padding: 10px; height: 150vh; background-color: coral;" class="text-center"> 
+
+			<div class="text-left col-lg-6" style="height: 150px;border: 2px solid black; padding-top: 10px;padding-left: 20px;">
+				
+				<label for="username" style="margin-bottom: 20px;color: black;">User name :&nbsp;&nbsp; </label>
+				<span><input type="text" 
+					placeholder="enter your name" 
+					name="username" 
+					style="font-size: 18px; border: none; border-bottom: 2px solid; background-color: transparent;">
+				</span><br>
+
+
+				<label for="contact" style="color: black;">Contact &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </label>
+				&nbsp;&nbsp;<input id="telNo" name="contact" type="tel" placeholder="enter contact number" style="font-size: 18px; border: none; border-bottom: 2px solid; background-color: transparent;">
+				<span class="validity"></span> <br> <br>
+
+
+				<label for="email" style="color: black;">Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+				&nbsp;&nbsp;<input type="email" placeholder="enter email address" required name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" style="font-size: 18px; border: none; border-bottom: 2px solid; background-color: transparent;">
+			</div>
+
+			<div class="text-left col-lg-6" style="height: 150px;border: 2px solid black;padding-top: 10px;padding-left: 20px;">
+				<label for="gender" style="color: black;">Gender :</label> <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="1" name="gender" >Male <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="2" name="gender" >Female <br>
+			</div>
+
+
+
+			<div class="text-left col-lg-6" style="height: 150px;border: 2px solid black;padding-top: 10px;padding-left: 20px;">
+				<label for="age" style="color: black;">Age :  Select your age to approx. range</label> <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="1" name="age" >&lt;20 <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="2" name="age" >21-40 <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="3" name="age" >41-60 <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="4" name="age" >61-80 <br>
+			</div>
+
+			<div class="text-left col-lg-6" style="height: 150px;border: 2px solid black;padding-top: 10px;padding-left: 20px;">
+				<label for="height" style="color: black;" >Height :  Select your height to approx. range(in Feets)</label> <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="1" name="height" >4'1 - 4'12 <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="2" name="height" >5'1 - 5'6 <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="3" name="height" >5'7 - 5'12 <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="4" name="height" >&gt;6'0 <br>
+			</div>
+			<div class="text-left col-lg-6" style="height: 180px;border: 2px solid black;padding-top: 10px;padding-left: 20px;">
+				<label for="weight" style="color: black;" >Weight :  Select your weight to approx. range(in KGs)</label> <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="1" name="weight" >&lt;55 <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="2" name="weight" >56-80 <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="3" name="weight" >81-100 <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="4" name="weight" >&gt;100 <br>
+			</div>
+
+			<div class="text-left col-lg-6" style="height: 180px;border: 2px solid black;padding-top: 10px;padding-left: 20px;">
+				<label for="disease" style="color: black;">Any Disease history : </label> <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><input type="radio" value="1" name="disease" >Diabetes</span> <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><input type="radio" value="2" name="disease" >Kidney Issue</span> <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><input type="radio" value="3" name="disease" >Heart Disease</span> <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><input type="radio" value="4" name="disease" >Liver Issue</span> <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><input type="radio" value="5" name="disease" >Joint Pains</span> <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><input type="radio" value="6" name="disease" >Thyroid</span> <br>
+				
+			</div>
+
+			<div class="text-left col-lg-6" style="height: 150px;border: 2px solid black;padding-top: 10px;padding-left: 20px;">
+				<label for="bp" style="color: black;" >Blood Pressure :  Select your BP to approx. range</label> <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="1" name="bp" >Low <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="2" name="bp" >Moderate <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="3" name="bp" >High <br>
+			</div>
+
+			<div class="text-left col-lg-6" style="height: 150px;border: 2px solid black;padding-top: 10px;padding-left: 20px;">
+				<label for="diet" style="color: black;" >Diet Plan : </label> <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="1" name="diet" >Building<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="2" name="diet" >Lifestyle <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="3" name="diet" >Healing<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="4" name="diet" >Happy Disease<br>
+				
+			</div>
+
+					
+			<div class="text-left col-lg-6" style="height: 350px;border: 2px solid black;padding-top: 50px;padding-left: 300px;">
+				<input type = "submit" value ="Submit" class="btn-primary" onclick="errorMessage()">
+			</div>
+
+            <!--Note For diet plan-->
+			<div class="text-left col-lg-6" style="height: 350px;border: 2px solid black;padding-top: 0px;padding-left: 5px;">
+			<div class="table-responsive">
+				<h3 style="color: black; padding-left: 300px;"><u>NOTE</u></h3>
+				<table class="table table-striped table-bordered table-hover" style="border: 1px solid black">
+					<tbody  style="padding-left: 0px; color: black;">
+						<tr><th  style="text-align: center;">DIET PLAN </th> <th  style="text-align: center; ">RECOMMENDED FOR :</th></tr>
+						<tr><td>BUILDING</td> <td style="text-align: left; "> • Children below 16 (if healthy) <br>
+																			 • Physically active people (doing more than 3 hours of intense exercise everyday</td> </tr>
+						<tr><td>LIFESTYLE</td> <td style="text-align: left;">Those who wanting to maintain their health. No current disease</td> </tr>
+						<tr><td>HEALING</td> <td style="text-align: left;">• Chronic disease reversal <br>
+																			 • Weight loss</td></tr>
+						<tr><td>HAPPY DISEASES</td> <td style="text-align: left;">Fever, Cold, Cough, Headache, Sore throat, Vomiting, Diarrhoea, or any other acute disease</td></tr>
+												
+					</tbody>
+		
+				</table>
+			</div>
+			</div>
+			<!--Note For diet plan-->
+
+ 
+
+		</form>
+ </section>
+
+<!-- FOOTER -->
+<footer data-stellar-background-ratio="0.5">
+	<div class="container">
+		 <div class="row">
+
+			  <div class="col-md-5 col-sm-12">
+				<div class="footer-thumb footer-info"> 
+					<h2>Farmacy Company</h2>
+					<p>Eat healthy and Stay healthy</p>
+			   </div>
+			  </div>
+
+			  <div class="col-md-2 col-sm-4"> 
+				   <div class="footer-thumb"> 
+						<h2>Company</h2>
+						<ul class="footer-link">
+							 <li><a href="#">About Us</a></li>
+							 <li><a href="#">Join our team</a></li>
+							 <li><a href="#">Read Blog</a></li>
+							 <li><a href="#">Press</a></li>
+						</ul>
+				   </div>
+			  </div>
+
+			  <div class="col-md-2 col-sm-4"> 
+				   <div class="footer-thumb"> 
+						<h2>Services</h2>
+						<ul class="footer-link">
+							<li><a href="#">Farm Products</a></li>
+							<li><a href="#">Diet Foods</a></li>
+							<li><a href="#">Sell and Buy</a></li>
+					   </ul>
+				   </div>
+			  </div>
+
+			  <div class="col-md-3 col-sm-4"> 
+				   <div class="footer-thumb"> 
+						<h2>Find us</h2>
+						<p>Yamnampet, Ghatkesar,<br>Hyderabad, Telangana 501301</p>
+				   </div>
+			  </div>                    
+
+			  <div class="col-md-12 col-sm-12">
+				   <div class="footer-bottom">
+						<div class="col-md-6 col-sm-5">
+							 <div class="copyright-text"> 
+								  <p>Copyright &copy; 2021 Farmacy Company</p>
+							 </div>
+						</div>
+						<div class="col-md-6 col-sm-7">
+							 <div class="phone-contact"> 
+								  <p>Call us <span>(+66) 010-020-0340</span></p>
+							 </div>
+							 <ul class="social-icon">
+								  <li><a href="https://www.facebook.com/templatemo" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+								  <li><a href="#" class="fa fa-twitter"></a></li>
+								  <li><a href="#" class="fa fa-instagram"></a></li>
+							 </ul>
+						</div>
+				   </div>
+			  </div>
+			  
+		 </div>
+	</div>
+	
+</footer>
+
+		<script>
+			$(function(){
+			$("input[name=contact]")[0].oninvalid = function () {
+				this.setCustomValidity("Please enter at least 5 characters.");
+			};
+			});
+		</script>
+		 <!-- SCRIPTS -->
+		 <script src="/static/js/jquery.js"></script>
+		 <script src="/static/js/bootstrap.min.js"></script>
+		 <script src="/static/js/jquery.stellar.min.js"></script>
+		 <script src="/static/js/jquery.magnific-popup.min.js"></script>
+		 <script src="/static/js/smoothscroll.js"></script>
+		 <script src="/static/js/custom.js"></script>
+		 
+</body>
+		
+</html>

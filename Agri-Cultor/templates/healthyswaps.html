@@ -1,0 +1,822 @@
+
+<html lang="en">
+    <head>
+         <title>Farmacy</title>
+   
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/magnific-popup.css">
+        <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+   
+   
+        <!-- MAIN CSS -->
+        
+		<link rel="stylesheet" href="/static/css/templatemo-style.css">
+   </head>
+   
+   
+   
+
+    <body style="padding-top: 50px;">
+        <!-- Header -->
+        <section class="navbar custom-navbar navbar-fixed-top" style="background-color: rgb(0, 174, 255); margin-bottom: 50px;" role="navigation">
+			<div class="container">
+  
+				 <div class="navbar-header">
+					  <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						   <span class="icon icon-bar"></span>
+						   <span class="icon icon-bar"></span>
+						   <span class="icon icon-bar"></span>
+					  </button>
+  
+					  <!-- lOGO TEXT HERE -->
+					  <a href="/index.html" class="navbar-brand">Farmacy</a>
+				 </div>
+  
+				 <!-- MENU LINKS -->
+				 <div class="collapse navbar-collapse">
+					  <ul class="nav navbar-nav navbar-nav-first">
+						   <li><a href="#home" class="smoothScroll">Home</a></li>
+						   <li><a href="#about" class="smoothScroll">About</a></li>
+						   <li><a href="#blog" class="smoothScroll">Blog</a></li>
+						   <li><a href="#work" class="smoothScroll">Our Work</a></li>
+						   <li><a href="#contact" class="smoothScroll">Contacts</a></li>
+					  </ul>
+  
+					  <ul class="nav navbar-nav navbar-right">
+						   <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+						   <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						   <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						   <li class="section-btn"><a href="#" data-toggle="modal" data-target="#modal-form">Sign in / Join</a></li>
+					  </ul>
+				 </div>
+  
+			</div>
+	   </section>
+  
+  <!--Header end-->
+    <section id="blog-detail" data-stellar-background-ratio="0.5" style="background-color: cornsilk;" >
+		
+					<div class="blog-detail-thumb">
+						<h2 style="text-align: center; font-weight: bold; font-style: italic;">What if I tell you that changing your food can cure your disease?</h2>
+						<p style="padding-left: 300px; color: black;">Thousands of people around the world are giving up medicine and curing health problems by changing their diet and lifestyle. </p>
+						<p style="padding-left: 300px; color: black;">First, you must understand some basic principles about natural food. If you want to be truly healthy, look for four qualities in your food. <br>They are : </p>
+						<ol type="1" style="padding-left: 350px; color: black;">
+							<li>Living </li>
+							<li>Wholesome</li>
+							<li>Plant-Based</li>
+							<li>Water-Rich</li>	
+						</ol>
+						<div class="blog-detail-thumb">
+							<div class="blog-image">
+								<img src="/static/images/LWPW.jpg" class="img-responsive" alt="Blog Image" style="margin-left: auto; margin-right: auto; width: 45%;">
+							</div>
+						
+						<p><h4 style="padding-left: 300px; color: black;">Here, we provide most important healthy swaps that help you to stay healthy...</h4></p>
+						</div>
+					</div>
+		
+    </section>		
+<!-- WORK -->
+<section id="work" data-stellar-background-ratio="0.5" style="background-color: rgb(0, 174, 255)">
+	<div class="container">
+		 <div class="row" >
+			  <div class="col-md-12 col-sm-12">
+				   <div class="section-title">
+						<h1 style="font-family: 'Times New Roman', Times, serif;">UNHEALTHY &lt; - &gt; HEALTHY</h1>
+					
+				   </div>
+			  </div>
+
+			  <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+				   <!-- WORK THUMB -->
+				   <div class="work-thumb">
+
+
+					<img src="/static/images/s1.jpg" id="myImage1" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+					<div id="myDIV1" style="font-weight: bold;">Baked Cookies</div> 
+					<button onclick="changeImage1()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+					<script>
+						function changeImage1() {
+							var image = document.getElementById('myImage1');
+							var x = document.getElementById("myDIV1");
+							if (image.src.match("/static/images/s1a.jpg") && x.innerHTML === "Coconut Slices") {
+								image.src = "/static/images/s1.jpg";
+								x.innerHTML = "Baked Cookies";
+							}
+							else {
+						
+					image.src = "/static/images/s1a.jpg";
+					x.innerHTML = "Coconut Slices";
+							}
+						}
+					</script>
+			
+
+	                </div>
+			    </div>
+				<div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+					<!--WORK THUMB-->
+					<div class="work-thumb">
+ 
+ 
+					 <img src="/static/images/s2.jpg" id="myImage2" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+					 <div id="myDIV2" style="font-weight: bold;">Aerated drinks</div> 
+					 
+					 <button onclick="changeImage2()" class="btn btn-danger" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+					 <script>
+						 function changeImage2() {
+							 var image = document.getElementById('myImage2');
+							 var x = document.getElementById("myDIV2");
+							 if (image.src.match("/static/images/s2a.jpg") && x.innerHTML === "Coconut Water") {
+								 image.src = "/static/images/s2.jpg";
+								 x.innerHTML = "Aerated drinks";
+							 }
+							 else {
+						 
+					 image.src = "/static/images/s2a.jpg";
+					 x.innerHTML = "Coconut Water";
+							 }
+						 }
+					 </script>
+ 
+					 </div>
+				 </div>
+				 <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+					<!--WORK THUMB-->
+					<div class="work-thumb"> 
+					 <img src="/static/images/s3.jpg" id="myImage3" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+					 <div id="myDIV3" style="font-weight: bold;">Packaged noodles</div> 
+					 <button onclick="changeImage3()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+					 <script>
+						 function changeImage3() {
+							 var image = document.getElementById('myImage3');
+							 var x = document.getElementById("myDIV3");
+							 if (image.src.match("/static/images/s3a.jpg") && x.innerHTML === "Zucchini noodles") {
+								 image.src = "/static/images/s3.jpg";
+								 x.innerHTML = "Packaged noodles";
+							 }
+							 else {
+						 
+					 image.src = "/static/images/s3a.jpg";
+					 x.innerHTML = "Zucchini noodles";
+							 }
+						 }
+					 </script>
+ 
+					 </div>
+				 </div>
+				 <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+					<!--WORK THUMB-->
+					<div class="work-thumb">
+ 
+ 
+					 <img src="/static/images/s4.jpg" id="myImage4" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+					 <div id="myDIV4" style="font-weight: bold;">Canned Juices</div>
+					 <button onclick="changeImage4()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+					 <script>
+						 function changeImage4() {
+							 var image = document.getElementById('myImage4');
+							 var x = document.getElementById("myDIV4");
+							 if (image.src.match("/static/images/s4a.jpeg") && x.innerHTML === "Fresh Juices") {
+								 image.src = "/static/images/s4.jpg";
+								 x.innerHTML = "Canned Juices";
+							 }
+							 else {
+						 
+					 image.src = "/static/images/s4a.jpeg";
+					 x.innerHTML = "Fresh Juices";
+							 }
+						 }
+					 </script>
+ 
+					 </div>
+				 </div>
+				 <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+					<!--WORK THUMB-->
+					<div class="work-thumb">
+					 <img src="/static/images/s5.jpg" id="myImage5" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+					 <div id="myDIV5" style="font-weight: bold;">White Rice</div>
+					 <button onclick="changeImage5()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+					 <script>
+						 function changeImage5() {
+							 var image = document.getElementById('myImage5');
+							 var x = document.getElementById("myDIV5");
+							 if (image.src.match("/static/images/s5a.jpg") && x.innerHTML === "Brown Rice") {
+								 image.src = "/static/images/s5.jpg";
+								 x.innerHTML = "White Rice";
+							 }
+							 else {
+						 
+					 image.src = "/static/images/s5a.jpg";
+					 x.innerHTML = "Brown Rice";
+							 }
+						 }
+					 </script>
+ 
+					 </div>
+				 </div>
+				 <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+					 <!--WORK THUMB-->
+					 <div class="work-thumb">
+  
+  
+					  <img src="/static/images/s6.jpg" id="myImage6" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+					  <div id="myDIV6" style="font-weight: bold;">Refined Oils</div>
+					  <button onclick="changeImage6()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+					  <script>
+						  function changeImage6() {
+							  var image = document.getElementById('myImage6');
+							  var x = document.getElementById("myDIV6");
+							  if (image.src.match("/static/images/s6a.jpg") && x.innerHTML === "Grated coconut") {
+								  image.src = "/static/images/s6.jpg";
+								  x.innerHTML = "Refined Oils";
+							  }
+							  else {
+						  
+					  image.src = "/static/images/s6a.jpg";
+					  x.innerHTML = "Grated coconut";
+							  }
+						  }
+					  </script>
+  
+					  </div>
+				  </div>
+				  <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+					 <!--WORK THUMB-->
+					 <div class="work-thumb">
+  
+  
+					  <img src="/static/images/s7.jpg" id="myImage7" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+					  <div id="myDIV7" style="font-weight: bold;">Refined Sugar</div>
+					  <button onclick="changeImage7()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+					  <script>
+						  function changeImage7() {
+							  var image = document.getElementById('myImage7');
+							  var x = document.getElementById("myDIV7");
+							  if (image.src.match("/static/images/s7a.jpg") && x.innerHTML === "Fresh Dates") {
+								  image.src = "/static/images/s7.jpg";
+								  x.innerHTML = "Refined Sugar";
+							  }
+							  else {
+						  
+					  image.src = "/static/images/s7a.jpg";
+					  x.innerHTML = "Fresh Dates";
+							  }
+						  }
+					  </script>
+  
+					  </div>
+				  </div>
+				  <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+                    <!--WORK THUMB-->
+                    <div class="work-thumb">
+                     <img src="/static/images/s19.jpg" id="myImage19" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+					 <div id="myDIV19" style="font-weight: bold;">Cereals</div>
+					 <button onclick="changeImage19()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+                     <script>
+                         function changeImage19() {
+                             var image = document.getElementById('myImage19');
+							 var x = document.getElementById("myDIV19");
+                             if (image.src.match("/static/images/s19a.webp") && x.innerHTML === "Fresh Fruits") {
+                                 image.src = "/static/images/s19.jpg";
+								 x.innerHTML = "Cereals";
+                             }
+                             else {
+                         
+                     image.src = "/static/images/s19a.webp";
+					 x.innerHTML = "Fresh Fruits";
+                             }
+                         }
+                     </script>
+ 
+                     </div>
+                 </div>
+				 <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+                    <!--WORK THUMB-->
+                    <div class="work-thumb">
+                     <img src="/static/images/s20.jpg" id="myImage20" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+					 <div id="myDIV20" style="font-weight: bold;">Poha/Upma</div>
+					 <button onclick="changeImage20()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+                     <script>
+                         function changeImage20() {
+                             var image = document.getElementById('myImage20');
+							 var x = document.getElementById("myDIV20");
+                             if (image.src.match("/static/images/s20a.jpg") && x.innerHTML === "Sprout Salad") {
+                                 image.src = "/static/images/s20.jpg";
+								 x.innerHTML = "Poha/Upma";
+                             }
+                             else {
+                         
+                     image.src = "/static/images/s20a.jpg";
+					 x.innerHTML = "Sprout Salad";
+                             }
+                         }
+                     </script>
+ 
+                     </div>
+                 </div>
+				 <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+                    <!--WORK THUMB-->
+                    <div class="work-thumb">
+                     <img src="/static/images/s21.jpg" id="myImage21" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+					 <div id="myDIV18" style="font-weight: bold;">Red Chilli Powder</div>
+					 <button onclick="changeImage21()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+                     <script>
+                         function changeImage21() {
+                             var image = document.getElementById('myImage21');
+							 var x = document.getElementById("myDIV21");
+                             if (image.src.match("/static/images/s21a.jpg") && x.innerHTML === "Green Chillies") {
+                                 image.src = "/static/images/s21.jpg";
+								 x.innerHTML = "Red Chilli Powder";
+                             }
+                             else {
+                         
+                     image.src = "/static/images/s21a.jpg";
+					 x.innerHTML = "Green Chillies";
+                             }
+                         }
+                     </script>
+ 
+                     </div>
+                 </div>
+				 <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+                    <!--WORK THUMB-->
+                    <div class="work-thumb">
+                     <img src="/static/images/s22.jpeg" id="myImage22" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+					 <div id="myDIV22" style="font-weight: bold;">Iodised Salt</div>
+					 <button onclick="changeImage22()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+                     <script>
+                         function changeImage22() {
+                             var image = document.getElementById('myImage22');
+							 var x = document.getElementById("myDIV22");
+                             if (image.src.match("/static/images/s22a.jpg") && x.innerHTML === "Pink Himalayan Salt") {
+                                 image.src = "/static/images/s22.jpeg";
+								 x.innerHTML = "Iodised Salt";
+                             }
+                             else {
+                         
+                     image.src = "/static/images/s22a.jpg";
+					 x.innerHTML = "Pink Himalayan Salt";
+                             }
+                         }
+                     </script>
+ 
+                     </div>
+                 </div>
+				  <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+					 <!--WORK THUMB-->
+					 <div class="work-thumb">
+  
+  
+					  <img src="/static/images/s8.jpg" id="myImage8" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+					  <div id="myDIV8" style="font-weight: bold;">Refined Wheat without bran</div>
+					  <button onclick="changeImage8()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+					  <script>
+						  function changeImage8() {
+							  var image = document.getElementById('myImage8');
+							  var x = document.getElementById("myDIV8");
+							  if (image.src.match("/static/images/s8a.jpg") && x.innerHTML === "Whole Wheat with bran") {
+								  image.src = "/static/images/s8.jpg";
+								  x.innerHTML = "Refined Wheat without bran";
+							  }
+							  else {
+						  
+					  image.src = "/static/images/s8a.jpg";
+					  x.innerHTML = "Whole Wheat with bran";
+							  }
+						  }
+					  </script>
+  
+					  </div>
+				  </div>
+                  <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+                    <!--WORK THUMB-->
+                    <div class="work-thumb">
+ 
+ 
+                     <img src="/static/images/s9.jpg" id="myImage9" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+                     <div id="myDIV9" style="font-weight: bold;">Animal Milk</div>
+					 <button onclick="changeImage9()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+                     <script>
+                         function changeImage9() {
+                             var image = document.getElementById('myImage9');
+							 var x = document.getElementById("myDIV9");
+                             if (image.src.match("/static/images/s9a.jpg") && x.innerHTML === "Homemade Coconut(any nut) Milk") {
+                                 image.src = "/static/images/s9.jpg";
+								 x.innerHTML = "Animal Milk";
+                             }
+                             else {
+                         
+                     image.src = "/static/images/s9a.jpg";
+					 x.innerHTML = "Homemade Coconut(any nut) Milk";
+                             }
+                         }
+                     </script>
+ 
+                     </div>
+                 </div>
+                 <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+                    <!--WORK THUMB -->
+                    <div class="work-thumb">
+                     <img src="/static/images/s10.webp" id="myImage10" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+                     <div id="myDIV10" style="font-weight: bold;">Butter</div>
+					 <button onclick="changeImage10()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+                     <script>
+                         function changeImage10() {
+                             var image = document.getElementById('myImage10');
+							 var x = document.getElementById("myDIV10");
+                             if (image.src.match("/static/images/s10a.jpg") && x.innerHTML === "Homemade Nut Butter") {
+                                 image.src = "/static/images/s10.webp";
+								 x.innerHTML = "Butter";
+                             }
+                             else {
+                         
+                     image.src = "/static/images/s10a.jpg";
+					 x.innerHTML = "Homemade Nut Butter";
+                             }
+                         }
+                     </script>
+ 
+                     </div>
+                 </div>
+                 <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+                    <!--WORK THUMB-->
+                    <div class="work-thumb">
+                     <img src="/static/images/s11.jpg" id="myImage11" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+					 <div id="myDIV11" style="font-weight: bold;">Cream</div>
+                     <button onclick="changeImage11()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+                     <script>
+                         function changeImage11() {
+                             var image = document.getElementById('myImage11');
+							 var x = document.getElementById("myDIV11");
+                             if (image.src.match("/static/images/s11a.webp") && x.innerHTML === "Fresh Coconut Malai") {
+                                 image.src = "/static/images/s11.jpg";
+								 x.innerHTML = "Cream";
+                             }
+                             else {
+                         
+                     image.src = "/static/images/s11a.webp";
+					 x.innerHTML = "Fresh Coconut Malai";
+                             }
+                         }
+                     </script>
+ 
+                     </div>
+                 </div>
+                 <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+                    <!--WORK THUMB-->
+                    <div class="work-thumb">
+ 
+ 
+                     <img src="/static/images/s12.jpg" id="myImage12" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+					 <div id="myDIV12" style="font-weight: bold;">Cheese</div>
+					 <button onclick="changeImage12()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+                     <script>
+                         function changeImage12() {
+                             var image = document.getElementById('myImage12');
+							 var x = document.getElementById("myDIV12");
+                             if (image.src.match("/static/images/s12a.jpg") && x.innerHTML === "Homemade Cashew Cheese") {
+                                 image.src = "/static/images/s12.jpg";
+								 x.innerHTML = "Cheese";
+                             }
+                             else {
+                         
+                     image.src = "/static/images/s12a.jpg";
+					 x.innerHTML = "Homemade Cashew Cheese";
+                             }
+                         }
+                     </script>
+ 
+                     </div>
+                 </div>
+                 <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+                    <!--WORK THUMB-->
+                    <div class="work-thumb">
+ 
+ 
+                     <img src="/static/images/s13.jpg" id="myImage13" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+                     <div id="myDIV13" style="font-weight: bold;">Ice Creams</div>
+					 <button onclick="changeImage13()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+                     <script>
+                         function changeImage13() {
+                             var image = document.getElementById('myImage13');
+							 var x = document.getElementById("myDIV13");
+                             if (image.src.match("/static/images/s13a.jpg") && x.innerHTML === "Plant-Based Ice Creams") {
+                                 image.src = "/static/images/s13.jpg";
+								 x.innerHTML = "Ice Creams";
+                             }
+                             else {
+                         
+                     image.src = "/static/images/s13a.jpg";
+					 x.innerHTML = "Plant-Based Ice Creams";
+                             }
+                         }
+                     </script>
+ 
+                     </div>
+                 </div>
+                 <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+                    <!--WORK THUMB-->
+                    <div class="work-thumb">
+ 
+ 
+                     <img src="/static/images/s14.jpg" id="myImage14" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+                     <div id="myDIV14" style="font-weight: bold;">Coffee made from coffee beans</div>
+					 <button onclick="changeImage14()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+                     <script>
+                         function changeImage14() {
+                             var image = document.getElementById('myImage14');
+							 var x = document.getElementById("myDIV14");
+                             if (image.src.match("/static/images/s14a.jpg") && x.innerHTML === "Coffee made from chick peas") {
+                                 image.src = "/static/images/s14.jpg";
+								 x.innerHTML = "Coffee made from coffee beans";
+                             }
+                             else {
+                         
+                     image.src = "/static/images/s14a.jpg";
+					 x.innerHTML = "Coffee made from chick peas";
+                             }
+                         }
+                     </script>
+ 
+                     </div>
+                 </div>
+                 <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+                    <!--WORK THUMB-->
+                    <div class="work-thumb">
+ 
+ 
+                     <img src="/static/images/s15.jpg" id="myImage15" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+					 <div id="myDIV15" style="font-weight: bold;">Tea</div>
+					 <button onclick="changeImage15()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+                     <script>
+                         function changeImage15() {
+                             var image = document.getElementById('myImage15');
+							 var x = document.getElementById("myDIV15");
+                             if (image.src.match("/static/images/s15a.jpg") && x.innerHTML === "Herbal Tea") {
+                                 image.src = "/static/images/s15.jpg";
+								 x.innerHTML = "Tea";
+                             }
+                             else {
+                         
+                     image.src = "/static/images/s15a.jpg";
+					 x.innerHTML = "Herbal Tea";
+                             }
+                         }
+                     </script>
+ 
+                     </div>
+                 </div>
+                 <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+                    <!--WORK THUMB-->
+                    <div class="work-thumb">
+ 
+ 
+                     <img src="/static/images/s16.jpg" id="myImage16" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+                     <div id="myDIV16" style="font-weight: bold;">Shampoos</div>
+					 <button onclick="changeImage16()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+                     <script>
+                         function changeImage16() {
+                             var image = document.getElementById('myImage16');
+							 var x = document.getElementById("myDIV16");
+                             if (image.src.match("/static/images/s16a.jpg") && x.innerHTML === "Soapnuts and Shikakai") {
+                                 image.src = "/static/images/s16.jpg";
+								 x.innerHTML = "Shampoos";
+                             }
+                             else {
+                         
+                     image.src = "/static/images/s16a.jpg";
+					 x.innerHTML = "Soapnuts and Shikakai";
+                             }
+                         }
+                     </script>
+ 
+                     </div>
+                 </div>
+                 <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+                    <!--WORK THUMB-->
+                    <div class="work-thumb">
+ 
+ 
+                     <img src="/static/images/s17.jpg" id="myImage17" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+                     <div id="myDIV17" style="font-weight: bold;">Soaps</div>
+					 <button onclick="changeImage17()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+                     <script>
+                         function changeImage17() {
+                             var image = document.getElementById('myImage17');
+							 var x = document.getElementById("myDIV17");
+                             if (image.src.match("/static/images/s17a.jpeg") && x.innerHTML === "Gram Flour") {
+                                 image.src = "/static/images/s17.jpg";
+								 x.innerHTML = "Soaps";
+                             }
+                             else {
+                         
+                     image.src = "/static/images/s17a.jpeg";
+					 x.innerHTML = "Gram Flour";
+                             }
+                         }
+                     </script>
+ 
+                     </div>
+                 </div>
+                 <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+                    <!--WORK THUMB-->
+                    <div class="work-thumb">
+                     <img src="/static/images/s18.jpg" id="myImage18" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+					 <div id="myDIV18" style="font-weight: bold;">Sofas</div>
+					 <button onclick="changeImage18()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+                     <script>
+                         function changeImage18() {
+                             var image = document.getElementById('myImage18');
+							 var x = document.getElementById("myDIV18");
+                             if (image.src.match("/static/images/s18a.jpg") && x.innerHTML === "Korai Grass Mat") {
+                                 image.src = "/static/images/s18.jpg";
+								 x.innerHTML = "Sofas";
+                             }
+                             else {
+                         
+                     image.src = "/static/images/s18a.jpg";
+					 x.innerHTML = "Korai Grass Mat";
+                             }
+                         }
+                     </script>
+ 
+                     </div>
+                 </div>
+
+				 <div class="col-md-3 col-sm-6" style="margin-bottom: 10px;">
+                    <!--WORK THUMB-->
+                    <div class="work-thumb">
+                     <img src="/static/images/s23.jpg" id="myImage23" width="200" height="230" style="border: 2px solid black; border-radius: 12px;"><br>
+					 <div id="myDIV23" style="font-weight: bold;">Toothpaste</div>
+					 <button onclick="changeImage23()" class="btn btn-primary" style="margin: 5px; background-color: orange; color: black;">SWAP</button>
+                     <script>
+                         function changeImage23() {
+                             var image = document.getElementById('myImage23');
+							 var x = document.getElementById("myDIV23");
+                             if (image.src.match("/static/images/s23a.png") && x.innerHTML === "Charcoal Powder") {
+                                 image.src = "/static/images/s23.jpg";
+								 x.innerHTML = "Toothpaste";
+                             }
+                             else {
+                         
+                     image.src = "/static/images/s23a.png";
+					 x.innerHTML = "Charcoal Powder";
+                             }
+                         }
+                     </script>
+ 
+                     </div>
+                 </div>
+
+
+
+
+		</div>
+	</div>
+</section>
+					   
+        <!-- FOOTER -->
+     <footer data-stellar-background-ratio="0.5">
+		<div class="container">
+			 <div class="row">
+
+				  <div class="col-md-5 col-sm-12">
+					   <div class="footer-thumb footer-info"> 
+							<h2>Farmacy Company</h2>
+							<p>Eat healthy and Stay healthy</p>
+					   </div>
+				  </div>
+
+				  <div class="col-md-2 col-sm-4"> 
+					   <div class="footer-thumb"> 
+							<h2>Company</h2>
+							<ul class="footer-link">
+								 <li><a href="#">About Us</a></li>
+								 <li><a href="#">Join our team</a></li>
+								 <li><a href="#">Read Blog</a></li>
+								 <li><a href="#">Press</a></li>
+							</ul>
+					   </div>
+				  </div>
+
+				  <div class="col-md-2 col-sm-4"> 
+					   <div class="footer-thumb"> 
+							<h2>Services</h2>
+							<ul class="footer-link">
+								 <li><a href="#">Farm Products</a></li>
+								 <li><a href="#">Diet Foods</a></li>
+								 <li><a href="#">Sell and Buy</a></li>
+							</ul>
+					   </div>
+				  </div>
+
+				  <div class="col-md-3 col-sm-4"> 
+					   <div class="footer-thumb"> 
+							<h2>Find us</h2>
+							<p>Yamnampet, Ghatkesar,<br>Hyderabad, Telangana 501301</p>
+					   </div>
+				  </div>                    
+
+				  <div class="col-md-12 col-sm-12">
+					   <div class="footer-bottom">
+							<div class="col-md-6 col-sm-5">
+								 <div class="copyright-text"> 
+									  <p>Copyright &copy; 2021 Farmacy Company</p>
+								 </div>
+							</div>
+							<div class="col-md-6 col-sm-7">
+								 <div class="phone-contact"> 
+									  <p>Call us <span>(+66) 010-020-0340</span></p>
+								 </div>
+								 <ul class="social-icon">
+									  <li><a href="https://www.facebook.com/templatemo" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+									  <li><a href="#" class="fa fa-twitter"></a></li>
+									  <li><a href="#" class="fa fa-instagram"></a></li>
+								 </ul>
+							</div>
+					   </div>
+				  </div>
+				  
+			 </div>
+		</div>
+		
+   </footer>
+
+   
+   <!-- MODAL -->
+   <section class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			 <div class="modal-content modal-popup">
+
+				  <div class="modal-header">
+					   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+					   </button>
+				  </div>
+
+				  <div class="modal-body">
+					   <div class="container-fluid">
+							<div class="row">
+
+								 <div class="col-md-12 col-sm-12">
+									  <div class="modal-title">
+										   <h2>Orgo - Life</h2>
+									  </div>
+
+									  <!-- NAV TABS -->
+									  <ul class="nav nav-tabs" role="tablist">
+										   <li class="active"><a href="#sign_up" aria-controls="sign_up" role="tab" data-toggle="tab">Create an account</a></li>
+										   <li><a href="#sign_in" aria-controls="sign_in" role="tab" data-toggle="tab">Sign In</a></li>
+									  </ul>
+
+									  <!-- TAB PANES -->
+									  <div class="tab-content">
+										   <div role="tabpanel" class="tab-pane fade in active" id="sign_up">
+												<form action="#" method="post">
+													 <input type="text" class="form-control" name="name" placeholder="Name" required>
+													 <input type="telephone" class="form-control" name="telephone" placeholder="Telephone" required>
+													 <input type="email" class="form-control" name="email" placeholder="Email" required>
+													 <input type="password" class="form-control" name="password" placeholder="Password" required>
+													 <input type="submit" class="form-control" name="submit" value="Submit Button">
+												</form>
+										   </div>
+
+										   <div role="tabpanel" class="tab-pane fade in" id="sign_in">
+												<form action="#" method="post">
+													 <input type="email" class="form-control" name="email" placeholder="Email" required>
+													 <input type="password" class="form-control" name="password" placeholder="Password" required>
+													 <input type="submit" class="form-control" name="submit" value="Submit Button">
+													 <a href="https://www.facebook.com/templatemo">Forgot your password?</a>
+												</form>
+										   </div>
+									  </div>
+								 </div>
+
+							</div>
+					   </div>
+				  </div>
+
+			 </div>
+		</div>
+   </section>
+
+
+
+   <!-- SCRIPTS -->
+   <script src="/static/js/jquery.js"></script>
+   <script src="/static/js/bootstrap.min.js"></script>
+   <script src="/static/js/jquery.stellar.min.js"></script>
+   <script src="/static/js/jquery.magnific-popup.min.js"></script>
+   <script src="/static/js/smoothscroll.js"></script>
+   <script src="/static/js/custom.js"></script>
+   
+    </body> 
+</html>

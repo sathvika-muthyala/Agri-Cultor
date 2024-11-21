@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farmacy - The initial step for a healthy society</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/static/images/logoicon.ico"/>
+    <meta charset="UTF-8">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="/static/css/shop.css">
+    <link rel="stylesheet" href="K:\fontawesome\fontawesome-free-5.13.0-web\fontawesome-free-5.13.0-web\css\all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/277b7ce68b.js" crossorigin="anonymous"></script>
+
+    <script>
+    function stickyMenu(){
+        var sticky=document.getElementById('sticky');
+        if(window.pageYOffset > 220){
+            sticky.classList.add('sticky');
+        }
+        else{
+            sticky.classList.remove('sticky');
+        }
+    }
+    window.onscroll = function(){
+        stickyMenu();
+    }
+    </script>
+</head>
+<body>
+    <div class="text-top hidden-xs">
+        <div class="marquee-main">
+            <marquee bgcolor="Green" scrollamount="8" onmouseover="this.stop()" onmouseout="this.start()"><b>100% ORGANIC PRODUCE | READY TO SELL</b></marquee>
+        </div>
+    </div>
+    <div class="parallax">
+        <div class="page-title">Farmacy</div>
+    </div>
+
+    <div class="menu" id="sticky">
+        <ul class="menu-ul">
+            <a href="/" class="a-menu">
+                <li><i class="fa fa-home" aria-hidden="true"></i>Home</li></a>
+            <a href="#millets" class="a-menu"><li>Millets</li></a>
+            <a href="#dryfruits" class="a-menu"><li>Dry Fruits</li></a>
+            <a href="#fruits" class="a-menu"><li>Fruits</li></a>
+            <a href="#vegetables" class="a-menu"><li>Vegetables</li></a>
+            <a href="#logo" class="a-menu"><li><img src="/static/images/logo.png"></li></a>
+            <a href="#organic manure" class="a-menu"><li>Organic Manure</li></a>
+            <a href="#deals" class="a-menu"><li><i class="fa fa-gift" aria-hidden="true"></i>Deals</li></a>
+            <a href="/projectuser.html" class="a-menu"  class="btn btn-info btn-lg">
+                <li><span class="glyphicon glyphicon-user"></span><i class="fa fa-user" aria-hidden="true"></i>Sign in</li></a>
+            <a href="#cart" class="a-menu">
+                <li><i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart</li></a>  
+        </ul>
+        <div class="search-box">
+            <form>
+                <input type="text" placeholder="Search...." name="search" class="search-input"/>
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+<!--Home Page Begins-->
+    <div class="container">
+        <a href="#millets">
+            <div class="categories">
+                <img src="/static/images/mixmillets.jpg" class="item-image"/>
+                <div class ="image-title">Millets</div>
+            </div>
+        </a>
+        <a href="#dryfruits">
+            <div class="categories">
+                <img src="/static/images/mixdry.jpg" class="item-image"/>
+                <div class ="image-title">Dry Fruits</div>
+            </div>
+        </a>
+        <a href="#fruits">
+            <div class="categories">
+                <img src="/static/images/mixfruits.jpg" class="item-image"/>
+                <div class ="image-title">Fruits</div>
+            </div>
+        </a>
+        <a href="#vegetables">
+            <div class="categories">
+                <img src="/static/images/mixveg.jpg" class="item-image"/>
+                <div class ="image-title">Vegetables</div>
+            </div>
+        </a>
+        <a href="#organic manure">
+            <div class="categories">
+                <img src="/static/images/manure.jpg" class="item-image"/>
+                <div class ="image-title">Organic Manure</div>
+            </div>
+        </a>
+        <a href="#deals">
+            <div class="categories">
+                <img src="/static/images/deals.jpg" class="item-image"/>
+                <div class ="image-title">Deals</div>
+            </div>
+        </a>  
+    </div>
+
+<!--Deals begins here-->
+    <div class="deals-container" id="deals">
+        <div class="parallax">
+            <div class="title">DEALS</div>
+        </div>
+        <div class="deal">
+            Save 10% on min-purchase of ₹1000 on Vegetables<br/>
+            <button class="coupon-btn">Add Coupon</button>
+        </div>
+        <div class="deal">
+            Save 10% on min-purchase of ₹1000 on Fruits<br/>
+            <button class="coupon-btn">Add Coupon</button>
+        </div>
+        <div class="deal">
+            Save 5% on min-purchase of ₹1000 on Dry Fruits<br/>
+            <button class="coupon-btn">Add Coupon</button>
+        </div>
+        <div class="deal">
+            Save 5% on min-purchase of ₹1000 on Millets<br/>
+            <button class="coupon-btn">Add Coupon</button>
+        </div>
+<!--Deals ends here-->
+
+<!--millets Begins here-->
+    <div class="deals-container"id="millets">
+        <div class="parallax">
+            <div class="title">MILLETS</div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/static/images/kodo millet rice.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Organic Kodo Millet</b><br/>
+                <div class="item-select">
+                     Price : Rs.32.5/250 grams
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/static/images/little millet.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Organic Little Millet</b><br/>
+                <div class="item-select">
+                     Price : Rs.32.5/250 grams
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/static/images/barnyard millet.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Organic Barnyard Millet</b><br/>
+                <div class="item-select">
+                     Price : Rs.32.5/250 grams
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+<!--millets Ends here-->
+
+<!--dryfruits Begins here-->
+    <div class="deals-container"id="dryfruits">
+        <div class="parallax">
+            <div class="title">DRY FRUITS</div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/static/images/cashew.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Organic Cashew</b><br/>
+                <div class="item-select">
+                     Price : Rs.349/250 grams
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/static/images/pista.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Organic Pista</b><br/>
+                <div class="item-select">
+                     Price : Rs.345/250 grams
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/static/images/badam.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Organic Badam</b><br/>
+                <div class="item-select">
+                     Price : Rs.400/250 grams
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+<!--dryfruits Ends here-->
+
+<!--fruits Begins here-->
+    <div class="deals-container"id="fruits">
+        <div class="parallax">
+            <div class="title">FRUITS</div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/static/images/guava.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Organic Guava</b><br/>
+                <div class="item-select">
+                     Price : Rs.25/250 grams
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/static/images/mango.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Organic Mango</b><br/>
+                <div class="item-select">
+                     Price : Rs.24.625/250 grams
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/static/images/chikoo.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Organic Chikoo</b><br/>
+                <div class="item-select">
+                     Price : Rs.26.25/250 grams
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+<!--fruits Ends here-->
+
+<!--veg Begins here-->
+    <div class="deals-container"id="vegetables">
+        <div class="parallax">
+            <div class="title">VEGETABLES</div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/static/images/tomato.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Organic Tomato</b><br/>
+                <div class="item-select">
+                     Price : Rs.10/250 grams
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/static/images/potato.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Organic Potato</b><br/>
+                <div class="item-select">
+                     Price : Rs.17.5/250 grams
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/static/images/onion.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Organic Onion</b><br/>
+                <div class="item-select">
+                     Price : Rs.19.5/250 grams
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+<!--veg Ends here-->
+
+ <!--manure Begins here-->
+    <div class="deals-container"id="organic manure">
+        <div class="parallax">
+            <div class="title">Organic Manure</div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/static/images/coconutcake.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Organic Coconut Oil Cake</b><br/>
+                <div class="item-select">
+                     Price : Rs.12.5/250 grams
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/static/images/cottonoilcake.jpeg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Organic  Cotton Seed Oil Cake</b><br/>
+                <div class="item-select">
+                     Price : Rs.5.75/250 grams
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/static/images/groundnutcake.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Organic Groundnut oil Cake</b><br/>
+                <div class="item-select">
+                     Price : Rs.11.25/250 grams
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+<!--manure Ends here-->
+
+
+
+<!--Home Page Ends-->
+
+<!--footer starts here-->
+    <div class="parallax1">
+        <div class="footer">
+            <div class="quick-links">
+                <div>Locations</div>
+                <ul>
+                    <li><a href="" class="a-links">Address 1</a></li>
+                    <li><a href="" class="a-links">Address 2</a></li>
+                    <li><a href="" class="a-links">Address 3</a></li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <div>Careers</div>
+                <ul>
+                    <li><a href="" class="a-links">Packing Staff</a></li>
+                    <li><a href="" class="a-links">Delivery Agents</a></li>
+                    <li><a href="" class="a-links">Shelf Fillers</a></li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <div>Quick Links</div>
+                <ul>
+                    <li><a href="" class="a-links">Contact Us</a></li>
+                    <li><a href="" class="a-links">FAQ</a></li>
+                    <li><a href="" class="a-links">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights">
+        <p>&copy; 2021 By Programmers Web Drive</p>
+        <!--i class="far fa-copyright fa-1x"></i>2021 By Programmers Web Drive-->
+    </div>
+
+
+<!--footer ends here-->
+
+
+</body>
+</html>

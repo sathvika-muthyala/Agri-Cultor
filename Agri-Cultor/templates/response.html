@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Eat Healthy Stay Healthy - Blog Page</title>
+<!-- 
+Hydro Template 
+http://www.templatemo.com/tm-509-hydro
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+     <link rel="stylesheet" href="/static/css/magnific-popup.css">
+     <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="/static/css/templatemo-style.css">
+</head>
+<body>
+
+     
+
+     
+
+     <!-- BLOG HEADER 1 -->
+     <section id="blog-header" data-stellar-background-ratio="0.5" style="padding: 0px; line-height: 0.5px;">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+                    <div class="col-lg-12 text-center" > 
+                         <h2>*******PATIENT'S HEALTH ANALYSIS*******</h2> <br>
+                         <div class="text-left" style="padding-left:150px;width: 40%;margin-left: 350px;">
+                         <h4 style="color: black;"><strong>NAME</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{name}}</h4>
+                         <h4 style="color: black;"><strong>GENDER</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{gender}}</h4>
+                         <h4 style="color: black;"><strong>AGE</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{age}}</h4>
+                         <h4 style="color: black;"><strong>HEIGHT</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{height}}</h4>
+                         <h4 style="color: black;"><strong>WEIGHT</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{weight}}</h4>
+                         <h4 style="color: black;"><strong>DISEASE</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{disease}}</h4>
+                         <h4 style="color: black;"><strong>BP</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{bp}}</h4>
+                         <h4 style="color: black;"><strong>DIET PLAN</strong>&nbsp;&nbsp;&nbsp;&nbsp;: {{diet}}</h4>
+                         
+                         
+                    
+               
+                         </div>
+                    </div>
+                    <!--BMI-->
+
+			<div class="text-left col-lg-6 text-center" style="background-color: yellow; border: 2px solid black; height: 200px; padding: 15px; border-radius: 12px; margin-left:25%; margin-right:25%">
+                    <label for="bmi" style="color: black; "><h3 style="color: black;">Calculate Your Body Mass Index (BMI)</h3> </label> <br>				
+                    <label for="BHeight" style="margin-bottom: 20px; margin-top: 20px; color: black;">Height(in CM) :&nbsp;&nbsp; </label>
+                              <span><input type="text" 
+                                   placeholder="enter your height" 
+                                   name="height" id="height"
+                                   style="font-size: 18px; border: none; border-bottom: 2px solid; background-color: transparent; color: black;">
+                              </span><br>
+     
+                              <label for="BWeight" style="margin-bottom: 20px;color: black;">Weight(in KG) :&nbsp;&nbsp; </label>
+                              <span><input type="text" 
+                                   placeholder="enter your weight" 
+                                   name="weight" id="weight"
+                                   style="font-size: 18px; border: none; border-bottom: 2px solid; background-color: transparent; color: black;">
+                              </span><br>
+                              
+                              <button id="btn" class="btn btn-primary">Calculate</button>
+                              <div id="result" style="padding: 15px; margin-top: 20px; color: black; font-weight: bold;"></div>
+                    </div>
+     
+                         <script>
+                         window.onload = () => {
+                              let button = document.querySelector("#btn");
+                         
+                              // Function for calculating BMI
+                              button.addEventListener("click", calculateBMI);
+                         };
+                         
+                         function calculateBMI() {
+                         
+                              /* Getting input from user into height variable.
+                              Input is string so typecasting is necessary. */
+                              let height = parseInt(document
+                                        .querySelector("#height").value);
+                         
+                              /* Getting input from user into weight variable.
+                              Input is string so typecasting is necessary.*/
+                              let weight = parseInt(document
+                                        .querySelector("#weight").value);
+                         
+                              let result = document.querySelector("#result");
+                         
+                              // Checking the user providing a proper
+                              // value or not
+                              if (height === "" || isNaN(height))
+                                   result.innerHTML = "Provide a valid Height!";
+                         
+                              else if (weight === "" || isNaN(weight))
+                                   result.innerHTML = "Provide a valid Weight!";
+                         
+                              // If both input is valid, calculate the bmi
+                              else {
+                         
+                                   // Fixing upto 2 decimal places
+                                   let bmi = (weight / ((height * height)
+                                                            / 10000)).toFixed(2);
+                         
+                                   // Dividing as per the bmi conditions
+                                   if (bmi < 18.6) result.innerHTML =
+                                        `Under Weight : <span>${bmi}</span>`;
+                         
+                                   else if (bmi >= 18.6 && bmi < 24.9)
+                                        result.innerHTML =
+                                             `Normal : <span>${bmi}</span>`;
+                         
+                                   else result.innerHTML =
+                                        `Over Weight : <span>${bmi}</span>`;
+                              }
+                         }
+                    </script>	
+               
+               <!--BMI-->
+     
+     
+                         
+                    </div>
+               </div>
+          </div>
+     </section>
+
+
+     <section style="height: 90vh; padding-left: 55px;">
+          <div class="text-left" style="height: 200vh; width:80%; margin-left: 100px; padding:30px; background-color: #e59ba4;">
+            <h2  style="color: black; padding-left: 450px;">YOUR PROBABLE DIET PLAN</h2><hr color="black">
+
+            {% set list1 = mess.split(';') %}
+            {% for item in list1 %}
+                <p style="font-size: 24px; padding-top: black; color: black;">{{ item }}</p>
+            {% endfor %}
+        </div>        
+    </section>
+
+
+      
+    <!-- SWAPS -->
+	<section id="work" data-stellar-background-ratio="0.5" style="height: 100vh; padding-left: 55px;">
+
+          <div class="container" style="height: 88vh; width:80%; margin-left: 100px; padding:30px; background-color: #e59ba4;">
+               <div><hr color="black"></div>
+                <div class="row">
+                       <div class="col-lg-6 col-md-6 col-sm-6">
+                           <!--WORK THUMB-->
+                           <div class="work-thumb">
+                            <img src="/static/images/earthernware.jpg" width="200" height="250" style="border: 2px solid black; border-radius: 12px;"><br>
+                            <a href="/earthenware"><button class="btn btn-primary" style="margin: 5px;">Earthern Cookware</button></a> <hr color="black">
+                            </div>
+                       </div>
+                       <div class="col-lg-6 col-md-6 col-sm-6">
+                          <!--WORK THUMB-->
+                          <div class="work-thumb">
+                           <img src="/static/images/HealthFoodSwaps.png" width="200" height="250" style="border: 2px solid black; border-radius: 12px;"><br>
+                           <a href="/swaps"><button class="btn btn-primary" style="margin: 5px;">Healthy Swaps</button></a><hr color="black">
+                           </div>
+                      </div>
+                       <div class="col-lg-6 col-md-6 col-sm-6">
+                           <!--WORK THUMB-->
+                           <div class="work-thumb">
+                            <img src="/static/images/ancientroutine.jpeg" width="200" height="250" style="border: 2px solid black; border-radius: 12px;"><br>
+                            <a href="/ancientroutine"><button class="btn btn-primary" style="margin: 5px;">Ancient Daily Routine</button></a>
+                            </div>
+                       </div>
+                       <div class="col-lg-6 col-md-6 col-sm-6">
+                         <!--WORK THUMB-->
+                         <div class="work-thumb">
+                          <img src="/static/images/headerbg.webp" width="200" height="250" style="border: 2px solid black; border-radius: 12px;"><br>
+                          <a href="/products"><button class="btn btn-primary" style="margin: 5px;">Order Now</button></a>
+                          </div>
+                         </div>
+               </div>
+          </div>
+     </section>
+     <!--SWAPS-->
+
+
+     <!-- FOOTER -->
+     <footer data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-5 col-sm-12">
+                         <div class="footer-thumb footer-info"> 
+					     <h2>Farmacy Company</h2>
+					     <p>Eat healthy and Stay healthy</p>
+			          </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              <h2>Company</h2>
+                              <ul class="footer-link">
+                                   <li><a href="#">About Us</a></li>
+                                   <li><a href="#">Join our team</a></li>
+                                   <li><a href="#">Read Blog</a></li>
+                                   <li><a href="#">Press</a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              <h2>Services</h2>
+                              <ul class="footer-link">
+                                   <li><a href="#">Farm Products</a></li>
+                                   <li><a href="#">Diet Foods</a></li>
+                                   <li><a href="#">Sell and Buy</a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              <h2>Find us</h2>
+                              <p>Yamnampet, Ghatkesar,<br>Hyderabad, Telangana 501301</p>
+                         </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="footer-bottom">
+                              <div class="col-md-6 col-sm-5">
+                                   <div class="copyright-text"> 
+                                        <p>Copyright &copy; 2021 Farmacy Company</p>
+                                   </div>
+                              </div>
+                              <div class="col-md-6 col-sm-7">
+                                   <div class="phone-contact"> 
+                                        <p>Call us <span>(+66) 010-020-0340</span></p>
+                                   </div>
+                                   <ul class="social-icon">
+                                        <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+     <!-- MODAL -->
+     <section class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+               <div class="modal-content modal-popup">
+
+                    <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                         </button>
+                    </div>
+
+                    <div class="modal-body">
+                         <div class="container-fluid">
+                              <div class="row">
+
+                                   <div class="col-md-12 col-sm-12">
+                                        <div class="modal-title">
+                                             <h2>Hydro Co</h2>
+                                        </div>
+
+                                        <!-- NAV TABS -->
+                                        <ul class="nav nav-tabs" role="tablist">
+                                             <li class="active"><a href="#sign_up" aria-controls="sign_up" role="tab" data-toggle="tab">Create an account</a></li>
+                                             <li><a href="#sign_in" aria-controls="sign_in" role="tab" data-toggle="tab">Sign In</a></li>
+                                        </ul>
+
+                                        <!-- TAB PANES -->
+                                        <div class="tab-content">
+                                             <div role="tabpanel" class="tab-pane fade in active" id="sign_up">
+                                                  <form action="#" method="post">
+                                                       <input type="text" class="form-control" name="name" placeholder="Name" required>
+                                                       <input type="telephone" class="form-control" name="telephone" placeholder="Telephone" required>
+                                                       <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                                       <input type="password" class="form-control" name="password" placeholder="Password" required>
+                                                       <input type="submit" class="form-control" name="submit" value="Submit Button">
+                                                  </form>
+                                             </div>
+
+                                             <div role="tabpanel" class="tab-pane fade in" id="sign_in">
+                                                  <form action="#" method="post">
+                                                       <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                                       <input type="password" class="form-control" name="password" placeholder="Password" required>
+                                                       <input type="submit" class="form-control" name="submit" value="Submit Button">
+                                                       <a href="https://www.facebook.com/templatemo">Forgot your password?</a>
+                                                  </form>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <!-- SCRIPTS -->
+     <script src="/static/js/jquery.js"></script>
+     <script src="/static/js/bootstrap.min.js"></script>
+     <script src="/static/js/jquery.stellar.min.js"></script>
+     <script src="/static/js/jquery.magnific-popup.min.js"></script>
+     <script src="/static/js/smoothscroll.js"></script>
+     <script src="/static/js/custom.js"></script>
+
+</body>
+</html>
